@@ -1,0 +1,58 @@
+Write a program which takes the following input and prints them one by one. 1. An whole number 2. A letter 3. A number with fractional part 4. A word
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner input=new Scanner(System.in);
+        int num=input.nextInt();
+        char letter=input.next().charAt(0);
+        double frac=input.nextDouble();
+        String word=input.next();
+        System.out.println(num);
+        System.out.println(letter);
+        System.out.println(frac);
+        System.out.println(word);
+    }
+}
+
+
+Write a program to print N numbers starting from 2. Take N as input and print from 2 to N;
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        for (int i=2;i<=n;i++){
+            System.out.print(i);
+        }
+    }
+}
+
+Write a program which takes a value N and prints the sum of N natural numbers. Natural numbers start from 1.
+Explanation: Sum of natural numbers from 1 to N, here N is 5, so 1+2+3+4+5 is 15. Input N = 5; Expected output : 15
+  import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int sum=0;
+        for (int i=1;i<=n;i++)
+        {
+            sum=sum+i;
+        }
+         System.out.print(sum);
+    }
+   
+}
+  
